@@ -6,7 +6,9 @@ A app to start using sso oauth using social media
 - package oauth
 
 - package express-generator   express --no-view --git api
-
+- choco install openssl ( admin )
+- https://dev.to/sagarbarapatre/react-authentication-with-twitter-google-facebook-and-github-149n
+- 
 ## Google 
 
 https://analytify.io/how-to-get-google-client-id-and-client-secret-from-google-developers-console/
