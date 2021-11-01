@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import io from 'socket.io-client'
+import OAuth from './OAuth'
+import { API_URL } from './config'
+import './App.css'
+const socket = io(API_URL)
+// const providers = ['twitter', 'google', 'facebook', 'github']
+const providers = ['google']
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className={'wrapper'}>
+        <div className={'container'}>
+          {providers.map(provider => 
+            <OAuth 
+              provider={provider}
+              key={provider}
+              socket={socket}
+            />
+          )}
+        </div>
+      </div>
+    )
+  }
 }
-
-export default App;

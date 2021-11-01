@@ -1,3 +1,16 @@
+# Project node-react-auth-social-media
+A app to start using sso oauth using social media 
+
+- create-react-app 
+- package eslint with standard configs
+- package oauth
+
+- package express-generator   express --no-view --git api
+
+## Google 
+
+https://analytify.io/how-to-get-google-client-id-and-client-secret-from-google-developers-console/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
